@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TeachEasy</string>
+
+    <string name="hello_text">Using this page you can add courses and this guide wizard will take you step by step
+    to do so</string>
+    <string name="powered">Created with passion by Aiman &amp; Alex</string>
+    <string name="welcome">Welcome</string>
+    <string name="learning_is_fun_with_us">Teaching is fun with us</string>
+    <string name="next">Next</string>
+
+    <!--Login Strings-->
+    <string name="we_fix">We fix small tweaks to your cloths at the comfort of your home.</string>
+    <string name="phone">Enter Your Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_4">Enter the 4-digit code sent to you at</string>
+    <string name="after">After: 0:%1$s</string>
+    <string name="resend">Resend the code</string>
+    <string name="verify">Verify</string>
+    <string name="success_verify">Successfully Verified</string>
+    <string name="error_mobile">Mobile number is required</string>
+    <string name="invalid_phone1">Phone number is invalid</string>
+
+    <!--Profile Strings-->
+    <string name="name">Enter Your Name</string>
+    <string name="name_title">Name</string>
+    <string name="city">Select Your City</string>
+    <string name="email">Enter Your Email</string>
+    <string name="email_title">Email</string>
+    <string name="gender">Select Your Gender</string>
+    <string name="gender_title">Gender</string>
+    <string name="save">Save</string>
+    <string name="error_email">Email is required</string>
+    <string name="name_error">Name is required</string>
+    <string name="gender_error">Gender is required</string>
+    <string name="empty">""</string>
+    <string name="invalid_email">Email is invalid</string>
+    <string name="add">Add</string>
+    <string name="pass">Enter Password</string>
+    <string name="pass_title">Password</string>
+    <string name="login">Login</string>
+    <string name="add_course">Add Course</string>
+    <string name="select_subject">1. Select Subject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="calender">Calender</string>
+    <string name="performance">Performance</string>
+    <string name="manage">Manage</string>
+    <string name="profile">Profile</string>
+    <string name="calculate">Calculate</string>
+    <string name="road">Road</string>
+    <string name="distance">Distance</string>
+    <string name="max_distance">Max Distance</string>
+    <string name="check_map">Check Map</string>
+    <string name="map">Map</string>
+    <string name="trip">Trip</string>
+    <string name="can_travel">Can Travel?</string>
+
+
+    <string-array name="cities">
+        <item>Berlin</item>
+        <item>Hamburg</item>
+        <item>München</item>
+        <item>Köln</item>
+        <item>Frankfurt</item>
+        <item>Essen</item>
+        <item>Dortmund</item>
+        <item>Stuttgart</item>
+        <item>Düsseldorf</item>
+        <item>Bremen</item>
+        <item>Hannover</item>
+        <item>Duisburg</item>
+        <item>Leipzig</item>
+        <item>Dresden</item>
+        <item>Wolfsburg</item>
+    </string-array>
+
+</resources>

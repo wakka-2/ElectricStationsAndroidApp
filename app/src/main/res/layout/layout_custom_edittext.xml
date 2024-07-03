@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class = "CustomEditextLayoutBinding">
+
+    </data>
+    <merge
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVertical50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border_dotted"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/dubai_regular"
+                android:hint="@string/phone"
+                android:textColor="@color/colorPrimary"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/colorPrimary_50"
+                android:inputType="text"
+                android:maxLines="1"
+                android:visibility="visible"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lableError" />
+
+            <com.app.electricstations.util.EditSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text_border_dotted"
+                android:hint="@string/gender_title"
+                android:minHeight="40dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:textColorHint="@color/colorPrimary_50"
+                android:textColor="@color/colorPrimary"
+                app:dropDownAnimStyle="@style/Animation.Design.BottomSheetDialog"
+                app:dropDownDrawable="@drawable/ic_dwon_arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lableError" />
+
+            <LinearLayout
+                android:id="@+id/li"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/edit_text_border_dotted"
+                android:weightSum="1"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lableError"
+                >
+
+<!--                <com.app.teacheasy.util.EditSpinner-->
+<!--                    android:id="@+id/spinner2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:hint="@string/gender_title"-->
+<!--                    android:minHeight="40dp"-->
+<!--                    android:paddingStart="16dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:paddingEnd="24dp"-->
+<!--                    android:maxHeight="40dp"-->
+<!--                    android:layout_weight="0.70"-->
+<!--                    android:paddingTop="8dp"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textColorHint="@color/colorPrimary_50"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:visibility="visible"-->
+<!--                    app:dropDownAnimStyle="@style/Animation.Design.BottomSheetDialog"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="22.00 SAR"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/dark_blue_text"
+                    android:layout_weight="0.15"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spinner2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="8dp"
+                    android:layout_weight="0.15"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_dwon_arrow" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/edit_text_border_dotted"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lableError">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etCode"
+                    style="@style/EditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/dubai_regular"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minHeight="40dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="24dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginStart="8dp"
+                    android:alpha="0.4"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary_50"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvApply"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvApply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/dubai_regular"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:enabled="false"
+                    android:layout_marginBottom="1dp"
+                    android:text="@string/welcome"
+                    android:alpha="0.4"
+                    android:textColor="@color/color_error"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lableTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/dubai_regular"
+                android:paddingStart="4dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/mobile_number"
+                android:textColor="@color/color_brownish_grey_two"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/et"
+                app:layout_constraintStart_toStartOf="@+id/et"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lableError"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="end"
+                android:fontFamily="@font/dubai_regular"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textColor="@color/color_error"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guidelineVertical50"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </merge>
+</layout>

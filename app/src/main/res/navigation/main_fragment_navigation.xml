@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragment_navigation"
+    app:startDestination="@id/calenderFragment">
+
+
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="com.app.electricstations.ui.fragments.CalenderFragment"
+        tools:layout="@layout/fragment_calender">
+
+        <action
+            android:id="@+id/action_calenderFragment_to_SelectSubjectFragment"
+            app:destination="@id/select_subject_fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/performance"
+        android:name="com.app.electricstations.ui.fragments.PerformanceFragment"
+        tools:layout="@layout/fragment_performance">
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/manage"
+        android:name="com.app.electricstations.ui.fragments.ManageFragment"
+        tools:layout="@layout/fragment_manage">
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.app.electricstations.ui.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/addCourseMain"
+        android:name="com.app.electricstations.ui.fragments.AddCourseMainFragment"
+        tools:layout="@layout/fragment_add_course_main">
+    </fragment>
+    <fragment
+        android:id="@+id/select_subject_fragment"
+        android:name="com.app.electricstations.ui.fragments.SelectSubjectFragment"
+        tools:layout="@layout/fragment_select_subject">
+
+        <argument
+            android:name="canTravel"
+            app:argType="boolean"
+            android:defaultValue="true"/>
+
+        <action
+            android:id="@+id/action_SelectSubjectFragment_to_performance"
+            app:destination="@id/performance"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+
+
+
+
+</navigation>

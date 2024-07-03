@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Spinner
+        android:id="@+id/spFrom"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:minHeight="50dp"
+        android:descendantFocusability="blocksDescendants"
+        app:custom_component_editText_hint="@string/email"
+        app:custom_component_hide_title="true"
+        app:custom_component_is_spinner2='true'
+        app:custom_component_title="@string/welcome"
+        app:custom_component_title_color="@color/dark_blue_text"
+        app:isErrorEnable="false"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"  />
+
+    <Spinner
+        android:id="@+id/spTo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:minHeight="50dp"
+        android:descendantFocusability="blocksDescendants"
+        app:custom_component_editText_hint="@string/email"
+        app:custom_component_hide_title="true"
+        app:custom_component_is_spinner2='true'
+        app:custom_component_title="@string/welcome"
+        app:custom_component_title_color="@color/dark_blue_text"
+        app:isErrorEnable="false"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/spFrom"  />
+
+    <com.app.electricstations.util.editTextKhayat.SSCustomEdittextOutlinedBorder
+        android:id="@+id/etRoad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:minHeight="40dp"
+        app:custom_component_editText_hint="@string/road"
+        app:custom_component_hide_title="true"
+        app:custom_component_title="@string/road"
+        app:custom_component_title_color="@color/dark_blue_text"
+        app:isErrorEnable="false"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/spTo" />
+
+    <com.app.electricstations.util.editTextKhayat.SSCustomEdittextOutlinedBorder
+        android:id="@+id/etDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:minHeight="40dp"
+        app:custom_component_editText_hint="@string/distance"
+        app:custom_component_hide_title="true"
+        app:custom_component_title="@string/distance"
+        app:custom_component_title_color="@color/dark_blue_text"
+        app:isErrorEnable="false"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etRoad" />
+
+
+    <com.app.electricstations.util.editTextKhayat.SSCustomEdittextOutlinedBorder
+        android:id="@+id/etMax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:minHeight="40dp"
+        app:custom_component_editText_hint="@string/max_distance"
+        app:custom_component_hide_title="true"
+        app:custom_component_title="@string/max_distance"
+        app:custom_component_title_color="@color/dark_blue_text"
+        app:isErrorEnable="false"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etDistance" />
+
+
+    <com.app.electricstations.util.LoadingButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etMax"
+        app:lb_btnColor="@color/colorPrimary"
+        app:lb_btnDisabledColor="@color/colorPrimary_50"
+        app:lb_btnText="@string/calculate"
+        app:lb_cornerRadius="10dp"
+        app:lb_disabledTextColor="@color/white"
+        app:lb_min_height="40dp"
+        app:lb_resetAfterFailed="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

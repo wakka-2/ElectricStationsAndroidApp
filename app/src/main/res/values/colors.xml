@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#39B9A4</color>
+    <color name="colorPrimary_50">#8039B9A4</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="green">#31917F</color>
+    <color name="light_green">#A8B739</color>
+    <color name="red">#C41E3A</color>
+    <color name="red_logout">#b73967</color>
+    <color name="blue">#0066CC</color>
+    <color name="grey">#B8B8B8</color>
+    <color name="burgundy">#94254D</color>
+    <color name="orange">#FFCC33</color>
+    <color name="unread_red">#CC0000</color>
+    <color name="grey_border">#F0F0F0</color>
+    <color name="main_mask" >#33000000</color>
+    <color name="main_mask_dark" >#66000000</color>
+    <color name="main_mask_darker" >#8000</color>
+    <color name="main_mask_darkerr" >#CCE5E5E5</color>
+    <color name="black_text" >#454F63</color>
+    <color name="dark_blue_text_50" >#800D4D83</color>
+    <color name="light_grey_text" >#B1B6BE</color>
+    <color name="dark_blue_text" >#0D4D83</color>
+
+    <color name="color_warm_grey">#979797</color>
+    <color name="color_brown_grey">#999999</color>
+    <color name="color_brownish_grey_two">#666666</color>
+    <color name="color_error">#B73967</color>
+    <color name="orange_text">#E89634</color>
+    <color name="orange_dark_text">#C47D30</color>
+
+    <color name="default_selected">#686868</color>
+    <color name="default_selected_text">#FFFFFF</color>
+    <color name="default_base_text">#000000</color>
+</resources>

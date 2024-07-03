@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_50</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/dubaiTextViewStyle</item>
+        <!-- Optional, but recommended for full edge-to-edge rendering -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--        <item name="android:editTextStyle">@style/EditTextTheme</item>-->
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="dubaiTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/dubai_light</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/dubai_medium</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="EditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/color_brown_grey</item>
+        <item name="colorControlActivated">@color/color_brown_grey</item>
+        <item name="colorControlHighlight">@color/color_brown_grey</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_corners_shape</item>
+    </style>
+
+    <declare-styleable name="AwesomeTextInputLayout">
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="animatedTextSize" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="android:gravity" />
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+    <declare-styleable name="LoadingButton">
+        <attr name="lb_btnColor" format="reference|color" />
+        <attr name="lb_btnText" format="reference|string" />
+        <attr name="lb_textColor" format="reference|color" />
+        <attr name="lb_resetAfterFailed" format="boolean" />
+        <attr name="lb_rippleEnable" format="boolean" />
+        <attr name="lb_btnRippleColor" format="reference|color" />
+        <attr name="lb_btnRippleAlpha" format="float" />
+        <attr name="lb_cornerRadius" format="dimension" />
+        <attr name="lb_min_height" format="dimension" />
+        <attr name="lb_btnDisabledColor" format="reference|color" />
+        <attr name="lb_disabledTextColor" format="reference|color" />
+        <attr name="android:fontFamily" />
+    </declare-styleable>
+    <declare-styleable name="EditSpinner">
+        <attr name="dropDownDrawable" format="reference" />
+        <attr name="dropDownDrawableWidth" format="dimension" />
+        <attr name="dropDownDrawableHeight" format="dimension" />
+        <attr name="dropDownDrawableSpacing" format="dimension" />
+        <attr name="dropDownAnimStyle" format="reference" />
+        <attr name="dropDownAnchor" format="integer" />
+        <attr name="dropDownWidth" format="dimension" />
+        <attr name="dropDownHeight" format="dimension" />
+        <attr name="dropDownSelector" format="reference" />
+    </declare-styleable>
+    <style name="DialogAnimations">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+</resources>

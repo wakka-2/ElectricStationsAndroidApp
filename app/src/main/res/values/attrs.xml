@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_component_attributes">
+        <attr name="isErrorEnable" format="boolean" />
+        <attr name="custom_component_title" format="reference" />
+        <attr name="custom_component_error" format="reference" />
+        <attr name="custom_component_title_color" format="color" />
+        <attr name="custom_component_title_error_color" format="color" />
+        <attr name="custom_component_border_color" format="color" />
+        <attr name="custom_component_border_error_color" format="color" />
+        <attr name="custom_component_editText" format="reference" />
+        <attr name="custom_component_error_text_value" format="reference" />
+        <attr name="custom_component_editText_hint" format="reference" />
+        <attr name="android:inputType" />
+        <attr name="android:digits" />
+        <attr name="android:imeOptions" />
+        <attr name="android:minHeight" format="dimension" />
+        <attr name="custom_component_maxline" format="integer" />
+        <attr name="custom_component_minline" format="integer" />
+        <attr name="custom_is_ltr" format="boolean" />
+        <attr name="custom_component_title_bg_color" format="color" />
+        <attr name="custom_component_editText_bg_color" format="color" />
+        <attr name="custom_component_error_text_bg_color" format="color" />
+        <attr name="custom_component_maxLength" format="integer"/>
+        <attr name="custom_component_border_width" format="integer"/>
+        <attr name="custom_component_hide_title" format="boolean"/>
+        <attr name="custom_component_is_spinner" format="boolean"/>
+        <attr name="custom_component_is_spinner2" format="boolean"/>
+        <attr name="custom_component_is_code" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ScrollDatePicker">
+        <attr name="baseColor" format="color"/>
+        <attr name="baseTextColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="showTitle" format="boolean"/>
+        <attr name="showFullDate" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+    <attr name="lv_external_radius" format="dimension"/>
+    <attr name="lv_internal_radius" format="dimension"/>
+    <attr name="lv_duration" format="integer"/>
+    <attr name="lv_start_color" format="color"/>
+    <attr name="lv_end_color" format="color"/>
+</declare-styleable>
+    <color name="color_start">#00CFDB</color>
+    <color name="color_end">#0063A6</color>
+</resources>
