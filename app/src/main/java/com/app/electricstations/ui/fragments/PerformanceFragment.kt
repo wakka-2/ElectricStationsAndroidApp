@@ -116,7 +116,6 @@ class PerformanceFragment : Fragment(), OnMapReadyCallback,INetworkDataListener 
                     updateMapLocation(location)
                 }
     }
-
     private fun updateMapLocation(location: Location?) {
         mMap.moveCamera(
             CameraUpdateFactory.newLatLng(
@@ -129,20 +128,6 @@ class PerformanceFragment : Fragment(), OnMapReadyCallback,INetworkDataListener 
 
         mMap.moveCamera(CameraUpdateFactory.zoomTo(15.0f))
     }
-
-    override fun showLoadingProgress(requestID: Int) {
-
-    }
-
-    override fun loadingFailure(
-        throwable: Throwable,
-        requestID: Int,
-        errorId: Int,
-        message: String
-    ) {
-
-    }
-
     override fun responseDone(response: Any, requestID: Int) {
         val stations = (response as RouteResponse).stations_on_route
         for(station in stations){
@@ -158,6 +143,19 @@ class PerformanceFragment : Fragment(), OnMapReadyCallback,INetworkDataListener 
             mMap.addMarker(markerOptions)
         }
     }
+    override fun showLoadingProgress(requestID: Int) {
+
+    }
+
+    override fun loadingFailure(
+        throwable: Throwable,
+        requestID: Int,
+        errorId: Int,
+        message: String
+    ) {
+
+    }
+
 
     override fun stopLoading() {
 

@@ -14,8 +14,6 @@ import com.app.electricstations.util.LoadingButton
 
 class SelectSubjectFragment : Fragment() {
 
-    private var courseRequests: CourseRequests? = null
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

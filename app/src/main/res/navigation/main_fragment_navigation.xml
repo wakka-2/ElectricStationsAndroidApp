@@ -45,11 +45,7 @@
 
 
     </fragment>
-    <fragment
-        android:id="@+id/addCourseMain"
-        android:name="com.app.electricstations.ui.fragments.AddCourseMainFragment"
-        tools:layout="@layout/fragment_add_course_main">
-    </fragment>
+
     <fragment
         android:id="@+id/select_subject_fragment"
         android:name="com.app.electricstations.ui.fragments.SelectSubjectFragment"
