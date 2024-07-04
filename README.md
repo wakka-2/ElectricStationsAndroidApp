@@ -1,3 +1,3 @@
 # ElectricStationsAndroidApp
  
-[![Watch the video](https://ibb.co/DQT3Q0C)]([https://youtu.be/oWWKcTxxFG8])
+[![Watch the video](https://i.postimg.cc/JzytBCPF/thumbnail.jpg)]([https://youtu.be/oWWKcTxxFG8])
