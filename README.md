@@ -1,4 +1,6 @@
 # ElectricStationsAndroidApp
+
+# Click on the image to see a live demo of the app
  
 [![Watch the video](https://i.postimg.cc/JzytBCPF/thumbnail.jpg)](https://www.youtube.com/watch?v=oWWKcTxxFG8)
 
